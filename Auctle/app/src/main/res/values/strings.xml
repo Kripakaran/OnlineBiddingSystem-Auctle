@@ -1,0 +1,12 @@
+<resources>
+    <string name="title_buy">Buy</string>
+    <string name="title_sell">Sell</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_settings">Settings</string>
+    <string name="big_text">This is a resource for some big text which runs through a few lines of text.
+    We would also like to use these set of lines at several places in our app.</string>
+    <string name="title_activity_admin">Auctle</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="signup"><u>signup</u></string>
+</resources>

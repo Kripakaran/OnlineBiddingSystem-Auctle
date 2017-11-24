@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_buy"
+        android:icon="@drawable/ic_shopping_cart_of_checkered_design"
+        android:title="@string/title_buy" />
+
+    <item
+        android:id="@+id/navigation_sell"
+        android:icon="@drawable/ic_megaphone"
+        android:title="@string/title_sell" />
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/ic_account_box_black_24dp"
+        android:title="@string/title_profile" />
+
+</menu>

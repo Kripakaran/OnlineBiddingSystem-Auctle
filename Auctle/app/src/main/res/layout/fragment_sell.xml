@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.CardView
+                android:id="@+id/ongoingAuctionCard"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/colorPrimary"
+                app:cardCornerRadius="14dp"
+                android:layout_marginLeft="-20dp">
+                <TextView
+                    android:id="@+id/sellOngoingTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:text="Ongoing Auction"
+                    android:textColor="@color/white"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="7dp"
+                    android:textSize="16sp"/>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_below="@id/ongoingAuctionCard"
+                android:id="@+id/sellOngoingRecyclerView"
+                android:layout_marginTop="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/upcomingAuctionCard"
+                android:layout_below="@+id/sellOngoingRecyclerView"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/colorPrimary"
+                app:cardCornerRadius="14dp"
+                android:layout_marginLeft="-20dp">
+                <TextView
+                    android:id="@+id/sellUpcomingTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:text="Upcoming Auctions"
+                    android:textColor="@color/white"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="7dp"
+                    android:textSize="16sp"/>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/sellUpcomingRecyclerView"
+                android:layout_below="@+id/upcomingAuctionCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/historyCard"
+                android:layout_below="@+id/sellUpcomingRecyclerView"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/colorPrimary"
+                app:cardCornerRadius="14dp"
+                android:layout_marginLeft="-20dp">
+                <TextView
+                    android:id="@+id/sellHistoryTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:text="History"
+                    android:textColor="@color/white"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="7dp"
+                    android:textSize="16sp"/>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/sellHistoryRecyclerView"
+                android:layout_below="@+id/historyCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp">
+
+            </android.support.v7.widget.RecyclerView>
+
+
+        </RelativeLayout>
+    </ScrollView>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/sellFAB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabSize="normal"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="18dp"
+        android:layout_marginBottom="18dp"
+        android:src="@drawable/ic_megaphone"/>
+
+</RelativeLayout>
